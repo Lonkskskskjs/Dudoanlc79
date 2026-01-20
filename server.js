@@ -11,7 +11,7 @@ const app = express();
 const cache = new NodeCache({ stdTTL: 5 });
 app.use(cors());
 
-const HISTORY_API = process.env.HISTORY || "https://lichssa.onrender.com/api/lxk";
+const HISTORY_API = process.env.HISTORY || "https://lichsuljuu.onrender.com/api/lxk";
 
 // ==========================
 // Chuẩn hóa dữ liệu API (ép kiểu số an toàn)
@@ -159,3 +159,4 @@ app.get("/api/taixiu", async (req, res) => {
 // ==========================
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log("Server chạy cổng:", PORT));
+
